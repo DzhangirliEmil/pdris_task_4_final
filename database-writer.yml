@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: db_setter
+      app: db-setter
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -16,7 +16,7 @@ spec:
     metadata:
       name: bd-setter-pod
       labels:
-        app: db_setter
+        app: db-setter
     spec:
       containers:
         - image: demiproger/pdris_task_1_setter
@@ -36,4 +36,4 @@ spec:
     - port: 80
       targetPort: 8080
   selector:
-    app: db_setter
+    app: db-setter
