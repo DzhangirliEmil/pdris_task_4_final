@@ -32,7 +32,7 @@ spec:
             - containerPort: 27017
               name: db-port
           volumeMounts:
-            - name: postgres-storage
+            - name: mongo-storage
               mountPath: /var/lib/mongo/data
 ---
 apiVersion: v1
