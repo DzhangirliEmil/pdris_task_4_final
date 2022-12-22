@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - image: demiproger/pdris_task_1_setter
-          name: pdris_task_1_setter_container
+          name: pdris-task-1-setter-container
           ports:
             - containerPort: 8080
               name: setter-port
