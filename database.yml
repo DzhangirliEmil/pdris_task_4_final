@@ -33,7 +33,7 @@ spec:
               name: db-port
           volumeMounts:
             - name: postgres-storage
-              mountPath: /var/lib/postgresql/data
+              mountPath: /var/lib/mongo/data
 ---
 apiVersion: v1
 kind: Service
